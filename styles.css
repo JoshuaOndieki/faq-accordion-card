@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700');
 
-:root{
+:root {
     --desktop-min-width: 768px;
     --mobile-max-width: 767px;
 
@@ -21,7 +21,7 @@
 }
 
 
-body{
+body {
     align-items: center;
     background-image: linear-gradient(to bottom right, var(--soft-violet), var(--soft-blue));
     display: flex;
@@ -33,26 +33,32 @@ body{
     margin: 0;
 }
 
-.attribution { color: black; font-size: 17px; text-align: center; }
-.attribution a { color: hsl(0, 0%, 100%); }
+.attribution {
+    color: black;
+    font-size: 17px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(0, 0%, 100%);
+}
 
 
-#faq-accordion-card{
+#faq-accordion-card {
     align-items: center;
-    background-color: white!important;
+    background-color: white !important;
     border-radius: 20px;
     display: flex;
     height: 60%;
     justify-content: flex-end;
     width: 60%;
-    
 }
 
-#faq{
+#faq {
     width: 50%;
 }
 
-#faq > div{
+#faq>div {
     width: 80%;
 }
 
@@ -63,10 +69,7 @@ body{
     justify-content: space-between;
 }
 
-.faq-question p{
-}
-
-.faq-question img{
+.faq-question img {
     height: min-content;
 }
 
@@ -74,34 +77,33 @@ body{
     display: none;
 }
 
-
-#expanded-faq .faq-answer{
+#expanded-faq .faq-answer {
     display: block;
     margin: 0;
 }
 
-#expanded-faq .faq-question img{
+#expanded-faq .faq-question img {
     transform: rotate(180deg);
 }
 
-#expanded-faq .faq-question{
+#expanded-faq .faq-question {
     font-weight: bold;
 }
 
-h1{
+h1 {
     font-size: xx-large;
     margin: 0;
 }
 
 
-#faq-svgs{
+#faq-svgs {
     align-items: center;
     display: flex;
     justify-content: flex-start;
     width: 50%;
 }
 
-hr{
+hr {
     background-color: var(--light-grayish-blue);
     width: 80%;
 }
@@ -109,25 +111,23 @@ hr{
 
 
 /* DESKTOP screens */
-@media (min-width: 768px){
+@media (min-width: 768px) {
 
-    #faq-accordion-card{
-        background: 
-        url("assets/images/illustration-woman-online-desktop.svg")
-        no-repeat bottom 50% left -17%,
-        url("assets/images/bg-pattern-desktop.svg")
-        no-repeat bottom 38% left 9000%;
+    #faq-accordion-card {
+        background:
+            url("assets/images/illustration-woman-online-desktop.svg") no-repeat bottom 50% left -17%,
+            url("assets/images/bg-pattern-desktop.svg") no-repeat bottom 38% left 9000%;
 
     }
 
-    #illustration{
+    #illustration {
         content: url("assets/images/illustration-box-desktop.svg");
         margin-left: -20%;
         margin-top: 20%;
 
     }
 
-    hr{
+    hr {
         margin-inline-start: 0;
     }
 }
@@ -135,25 +135,24 @@ hr{
 
 
 /* MOBILE screens */
-@media (max-width: 767px){
+@media (max-width: 767px) {
 
-    #faq-accordion-card{
-        background: url("assets/images/bg-pattern-mobile.svg")
-        no-repeat top center;
+    #faq-accordion-card {
+        background: url("assets/images/bg-pattern-mobile.svg") no-repeat top center;
     }
 
 
-    #illustration{
+    #illustration {
         content: url("assets/images/illustration-woman-online-mobile.svg");
         margin-top: -75%;
     }
 
-    #faq-svgs{
+    #faq-svgs {
         height: 30%;
         width: 70%;
     }
 
-    #faq-accordion-card{
+    #faq-accordion-card {
         flex-direction: column;
         font-size: xx-small;
         height: 80%;
@@ -162,11 +161,11 @@ hr{
 
     }
 
-    .attribution{
+    .attribution {
         font-size: 12px;
     }
 
-    #faq{
+    #faq {
         align-items: center;
         display: flex;
         flex-direction: column;
@@ -176,13 +175,12 @@ hr{
         width: 95%;
     }
 
-    #faq > div {
+    #faq>div {
         width: 95%;
     }
 
-    hr{
+    hr {
         margin: 1%;
         width: 95%;
     }
 }
-

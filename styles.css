@@ -1,9 +1,120 @@
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
-
-
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700');
 
-body{
-    font-family: "Kumbh Sans", sans-serif;
+:root{
+    --desktop-min-width: 768px;
+    --mobile-max-width: 767px;
+
+    /* colors > primary > text */
+    --very-dark-desaturated-blue: hsl(238, 29%, 16%);
+    --soft-red: hsl(14, 88%, 65%);
+
+    /* colors > primary > background gradient */
+    --soft-violet: hsl(273, 75%, 66%);
+    --soft-blue: hsl(240, 73%, 65%);
+
+    /* colors > neutral > text */
+    --very-dark-grayish-blue: hsl(237, 12%, 33%);
+    --dark-grayish-blue: hsl(240, 6%, 50%);
+
+    /* colors > neutral > dividers */
+    --light-grayish-blue: hsl(240, 5%, 91%);
 }
+
+
+body{
+    align-items: center;
+    background-image: linear-gradient(to bottom right, var(--soft-violet), var(--soft-blue));
+    display: flex;
+    flex-direction: column;
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 12px;
+    height: 100vh;
+    justify-content: center;
+    margin: 0;
+}
+
+.attribution { color: black; font-size: 17px; text-align: center; }
+.attribution a { color: hsl(0, 0%, 100%); }
+
+
+#faq-accordion-card{
+    align-items: center;
+    background-color: white!important;
+    border-radius: 20px;
+    display: flex;
+    height: 60%;
+    justify-content: flex-end;
+    width: 60%;
+    
+}
+
+#faq{
+    width: 50%;
+}
+
+#faq > div{
+    width: 80%;
+}
+
+.faq-question {
+    font-size: larger;
+}
+
+.faq-answer {
+    display: none;
+}
+
+
+#expanded-faq .faq-answer{
+    display: block;
+}
+
+#expanded-faq .faq-question{
+    font-weight: bold;
+}
+
+h1{
+    font-size: xx-large;
+    margin: 0;
+}
+
+
+#faq-svgs{
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    width: 50%;
+}
+
+hr{
+    background-color: var(--light-grayish-blue);
+    width: 80%;
+}
+
+
+/* DESKTOP screens */
+@media (min-width: 768px){
+
+    #faq-accordion-card{
+        background: 
+        url("assets/images/illustration-woman-online-desktop.svg")
+        no-repeat bottom 50% left -17%,
+        url("assets/images/bg-pattern-desktop.svg")
+        no-repeat bottom 38% left 9000%;
+
+    }
+
+    #illustration{
+        content: url("assets/images/illustration-box-desktop.svg");
+        margin-left: -20%;
+        margin-top: 20%;
+
+    }
+
+    hr{
+        margin-inline-start: 0;
+    }
+}
+
+
+

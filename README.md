@@ -12,4 +12,4 @@ Tasks completed at THE Jitu Software Developer Training
 
 | DESKTOP | MOBILE |
 | -- | -- |
-| ![MY DESKTOP DESIGN](screenshots\my-desktop-design.png) | ![MY MOBILE DESIGN](screenshots\my-mobile-design.png) |
+| ![MY DESKTOP DESIGN](screenshots/my-desktop-design.png) | ![MY MOBILE DESIGN](screenshots/my-mobile-design.png) |

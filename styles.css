@@ -24,6 +24,7 @@
 body {
     align-items: center;
     background-image: linear-gradient(to bottom right, var(--soft-violet), var(--soft-blue));
+    color: var(--dark-grayish-blue);
     display: flex;
     flex-direction: column;
     font-family: "Kumbh Sans", sans-serif;
@@ -64,9 +65,14 @@ body {
 
 .faq-question {
     align-items: center;
+    cursor: pointer;
     display: flex;
     font-size: larger;
     justify-content: space-between;
+}
+
+.faq-question:hover {
+    color: var(--soft-red);
 }
 
 .faq-question img {
@@ -99,13 +105,19 @@ h1 {
 #faq-svgs {
     align-items: center;
     display: flex;
-    justify-content: flex-start;
     width: 50%;
 }
 
 hr {
     background-color: var(--light-grayish-blue);
+    border: none;
+    height: 1px;
     width: 80%;
+}
+
+
+h1, .faq-question {
+    color: var(--very-dark-grayish-blue);
 }
 
 
@@ -148,7 +160,7 @@ hr {
     }
 
     #faq-svgs {
-        height: 30%;
+        height: 25%;
         width: 70%;
     }
 

@@ -123,7 +123,7 @@ h1, .faq-question {
 
 
 /* DESKTOP screens */
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
 
     #faq-accordion-card {
         background:
@@ -147,7 +147,7 @@ h1, .faq-question {
 
 
 /* MOBILE screens */
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
 
     #faq-accordion-card {
         background: url("assets/images/bg-pattern-mobile.svg") no-repeat top center;

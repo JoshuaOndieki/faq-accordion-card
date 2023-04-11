@@ -59,7 +59,7 @@ body {
     width: 50%;
 }
 
-#faq>div {
+#faq>details {
     width: 80%;
 }
 
@@ -79,8 +79,8 @@ body {
     height: min-content;
 }
 
-.faq-answer {
-    display: none;
+details[open] .faq-question img {
+    transform: rotate(180deg);
 }
 
 #expanded-faq .faq-answer {
@@ -88,9 +88,9 @@ body {
     margin: 0;
 }
 
-#expanded-faq .faq-question img {
+/* #expanded-faq .faq-question img {
     transform: rotate(180deg);
-}
+} */
 
 #expanded-faq .faq-question {
     font-weight: bold;

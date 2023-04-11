@@ -59,7 +59,7 @@ body {
     width: 50%;
 }
 
-#faq>div {
+#faq>details {
     width: 80%;
 }
 
@@ -79,9 +79,9 @@ body {
     height: min-content;
 }
 
-.faq-answer {
+/* .faq-answer {
     display: none;
-}
+} */
 
 #expanded-faq .faq-answer {
     display: block;
